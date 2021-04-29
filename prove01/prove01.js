@@ -2,7 +2,7 @@
  * REQUIRE EXTERNAL MODULES
  */
 const http = require('http');
-const routes = require('./routes/prove01-routes');
+const routes = require('./routes/ta02');
 
 /**
  * CREATES SERVER ON PORT 3000

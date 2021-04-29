@@ -73,14 +73,16 @@ const requestHandler = (req, res) => {
         });
         //parsing the incoming data from the form submission and diplaying in the console.
         return req.on('end', () => {
-            const parsedBody = Buffer.concat(body).toString();
-            const user = parsedBody.split('=')[1];
+            // const parsedBody = Buffer.concat(body).toString();
+            // const user = parsedBody.split('=')[1];
+
+            console.log(JSON.parse(JSON.stringify(req.body)));
 
             //display in the console
-            console.log(user);
+            // console.log(user);
 
             //add user to user list
-            users.push(user);
+            // users.push(user);
 
             //refresh page
             res.statusCode = 302;
