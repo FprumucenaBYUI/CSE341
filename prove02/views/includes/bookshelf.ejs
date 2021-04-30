@@ -1,0 +1,32 @@
+<section class="page-section bookshelf" id="bookshelf">
+    <div class="container">
+        <!-- Book Collection List -->
+        <% if(Array.isArray(books) && books.length) { %>
+            <div class="row justify-content-center">
+                <% for(book of books) { %>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="bookshelf-item mx-auto">
+                            <div class="card" style="width: 20rem">
+                                <div class="card-block card-align">
+                                    <h4>
+                                        <%= book.title %>
+                                    </h4>
+                                    <p>
+                                        <%= book.summary %>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+            <% } else {%>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">There are no books in the collection</h2>
+                <% } %>
+                    <div class="form-group">
+                        <input class="btn btn-primary btn-xl" type="button" onclick="location.href='/add-book';" value="Add New Book" />
+                    </div>
+
+
+    </div>
+</section>

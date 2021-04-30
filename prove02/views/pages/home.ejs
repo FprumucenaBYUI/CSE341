@@ -10,50 +10,26 @@
         <!-- Masthead-->
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
-
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">book collection</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
+                <h1 class="masthead-heading text-uppercase mb-0">
+                    Prove 1 - book collection
+                </h1>
             </div>
         </header>
         <!-- Bookshelf Section-->
-        <section class="page-section bookshelf" id="bookshelf">
-            <div class="container">
-                <!-- Bookshelf Grid Items-->
-                <!-- bookshelf Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">bookshelf</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- bookshelf Grid Items-->
-                <!-- TODO:  -->
+        <%- include ('../includes/bookshelf.ejs') %>
 
+            <!-- Footer-->
+            <%- include ('../includes/footer.ejs') %>
 
-            </div>
-        </section>
+                <!-- Copyright Section-->
+                <%- include ('../includes/copyright.ejs') %>
 
-        <!-- Footer-->
-        <%- include ('../includes/footer.ejs') %>
-
-            <!-- Copyright Section-->
-            <%- include ('../includes/copyright.ejs') %>
-
-                <!-- Bootstrap core JS-->
-                <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-                <!-- Third party plugin JS-->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-
+                    <!-- Bootstrap core JS-->
+                    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+                    <!-- Third party plugin JS-->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </body>
 
 </html>

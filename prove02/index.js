@@ -25,4 +25,4 @@ app.use(express.static(path.join(__dirname, 'public')))
         // 404 page
         res.render('pages/404', { title: '404 - Page Not Found', path: req.url })
     })
-    .listen(3000);
+    .listen(3000, () => { console.log("Prove 02 Server running on Port 3000"); });

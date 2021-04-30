@@ -4399,6 +4399,10 @@ input[type=button].btn-block {
     overflow-y: auto;
 }
 
+.card-align {
+    text-align: center;
+}
+
 @media (max-width: 575.98px) {
     .navbar-expand-sm>.container,
     .navbar-expand-sm>.container-fluid,
@@ -10107,6 +10111,7 @@ a.text-dark:focus {
 
 .page-section {
     padding: 6rem 0;
+    margin-top: 6rem;
 }
 
 .page-section .page-section-heading {
@@ -10331,7 +10336,7 @@ a.text-dark:focus {
     position: absolute;
     z-index: 1;
     right: 1.5rem;
-    top: 1rem;
+    top: 0;
     font-size: 3rem;
     line-height: 3rem;
     color: #1abc9c;
