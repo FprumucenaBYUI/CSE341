@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'public')))
     .use(routes)
     .get('/', (req, res, next) => {
         // This is the primary index, always handled last. 
-        res.render('pages/index', { title: 'PROVE 01', path: '/' });
+        res.render('pages/index', { title: 'PROVE 02', path: '/' });
     })
     .use((req, res, next) => {
         // 404 page
