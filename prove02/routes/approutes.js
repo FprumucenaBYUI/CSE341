@@ -10,10 +10,7 @@ const bookList = [];
  * HTTP GET
  */
 router.get('/add-book', (req, res, next) => {
-    res.render('pages/addbook', {
-        title: 'Team Activity 02',
-        path: 'addbook'
-    });
+    res.render('pages/addbook');
 });
 
 /**
@@ -35,7 +32,6 @@ router.post('/save-book', (req, res, next) => {
  */
 router.get('/', (req, res, next) => {
     res.render('pages/home', {
-        path: '/home',
         books: bookList
     });
 });

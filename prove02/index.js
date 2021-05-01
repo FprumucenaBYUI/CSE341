@@ -6,6 +6,7 @@ const express = require('express');
 const app = express();
 const routes = require('./routes/approutes');
 const path = require('path');
+const PORT = process.env.PORT || 3000
 
 /**
  * instantiating app server instance on port 3000
@@ -25,4 +26,4 @@ app.use(express.static(path.join(__dirname, 'public')))
         // 404 page
         res.render('pages/404', { title: '404 - Page Not Found', path: req.url })
     })
-    .listen(3000, () => { console.log("Prove 02 Server running on Port 3000"); });
+    .listen(PORT, () => { console.log(`Prove 02 Server running on Port ${PORT}`); });
